@@ -1,0 +1,106 @@
+body{
+    background-color: #290808;
+    margin: 0;
+    color: #a70202;
+  }
+  
+  
+  
+  
+  .header,.skills{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .my,.my2,.journey{
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 50px;
+    color: whitesmoke;
+  }
+  
+  .journey{
+    color: #a70202;
+  }
+  
+  .edu-details,.list-skills{
+    margin: 30px 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    
+  }
+  
+  .bachelors,.hsc,.sslc,.skills,.skills2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255,0.18);
+    box-shadow:0 8px 32px rgba(0, 0, 0, 0.37);
+  }
+  
+  .bachelors,.sslc,.skills,.hsc,.skills2{
+    border: 2px solid #880303;
+    color: rgb(209, 208, 208);
+    box-shadow: 0px 0px 7px #880303;
+  }
+  
+  .skills,.skills2{
+    color: #a70202;
+  }
+  
+  .skills,.my2,.skills2{
+    display: flex;
+    justify-content: center;
+    background-color: #421111;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .skill-topic{
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: underline;
+    justify-content: center;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #a70202;
+    
+  }
+  
+  .link{
+    text-decoration: none;
+    color: #a70202;
+  }
+  
+  @media (max-width:800px) {
+    .skill-container{
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+    .edu-details,.list-skills{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      width: 100%;
+      margin-right: 10px;
+    }
+  }
+  

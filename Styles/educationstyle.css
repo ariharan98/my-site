@@ -46,7 +46,6 @@ body{
   
   .bachelors,.sslc,.skills,.hsc,.skills2{
     border: 2px solid #880303;
-    color: rgb(209, 208, 208);
     box-shadow: 0px 0px 7px #880303;
   }
   
@@ -63,7 +62,7 @@ body{
   }
   
   .skill-topic{
-    font-size: 20 px;
+    font-size: 21px;
     color: whitesmoke;
     text-decoration: underline;
     justify-content: center;

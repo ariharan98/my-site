@@ -13,7 +13,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.5; 
+   
     z-index: 1;
     margin: 0;
 }
@@ -29,7 +29,7 @@
     background-size: 400%;
     padding: 40px;
     -webkit-background-clip: text ;
-    -webkit-text-stroke: 5px transparent;
+    
   }
 
 .univ{

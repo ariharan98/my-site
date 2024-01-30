@@ -1,6 +1,4 @@
-@media (min-with: 480px)
-{
-    .container{
+.container{
     display: flex;
     position: relative;
     justify-content: center;
@@ -100,4 +98,4 @@
 .icon{
   width: 35px;
 }
-}
+

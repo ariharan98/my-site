@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');*/
 .container{
     display: flex;
     position: relative;
@@ -19,8 +19,8 @@
 }
 
 .welcome{
-    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
-    font-family: 'Bungee', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Bungee', sans-serif;*/
     position: absolute;
     z-index: 2;
     font-size: 150px;
@@ -35,8 +35,8 @@
   }
 
 .univ{
-    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
-    font-family: 'Bungee', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Bungee', sans-serif;*/
     position: absolute;
     z-index: 2;
     font-size: 80px;

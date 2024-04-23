@@ -1,11 +1,6 @@
-@font-face{
-  font-family: jetBrains;
-  src: url(/fonts/jetBrains.ttf);
-}
 
 body{
   background-color: #250808;
-  font-family: jetBrains;
 }
 
 .header{

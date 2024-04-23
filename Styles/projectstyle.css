@@ -1,0 +1,89 @@
+@font-face{
+  font-family: jetBrains;
+  src: url(/fonts/jetBrains.ttf);
+}
+
+body{
+    background-color: #290808;
+    font-family: jetBrains;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #a70202;
+  }
+  
+  .page-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .project1,.project2,.project3,.project4{
+    width: 100%;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin: 0px 5px;
+  }
+  
+  .detail,.image{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    color: rgb(255, 240, 240);
+    padding: 2px 15px;
+    font-size: 20px;
+    font-family: jetBrains;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .pname{
+    text-decoration: underline;
+    font-family: jetBrains;
+  }
+  
+  .para{
+    color: #a70202;
+  }
+  
+  .image{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    row-gap: 10px;
+  }
+  
+  .photo,.photo4{
+    margin-right: 20px;
+    width: 40%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .photo4{
+    object-position: center;
+  }
+  
+  .footer{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .homepage,.top{
+    margin: 0px 30px;
+  }
+    
+  .links{
+    text-decoration: none;
+    color: #a70202;
+  }

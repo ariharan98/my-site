@@ -4,11 +4,6 @@
   padding: 0px;
   font-family: jetBrains;
 }
-
-@font-face{
-  font-family: jetBrains;
-  src: url(/fonts/jetBrains.ttf);
-} 
   .header{
     display: flex;
     position: absolute;
@@ -16,7 +11,7 @@
     z-index: 1;
     color: rgb(237, 41, 41);
     font-size: 40px;
-    left: 15%;
+    left: 25%;
   
   }
   
@@ -78,13 +73,3 @@
     text-decoration: none;
     color: #ff6161;
   }
-  
-  /* .choose-way{
-    display: flex;
-    vertical-align: bottom;
-    justify-content: center;
-    width: 100%;
-    color: rgb(3, 56, 230);
-    font-size: 70px;
-    align-items: center;
-  } */

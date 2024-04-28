@@ -1,0 +1,99 @@
+body{
+  background-image:url(./2907044.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  }
+  .header,.skills{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .my,.my2,.journey{
+    font-weight: bold;
+    font-size: 50px;
+    color: whitesmoke;
+  }
+  
+  .journey{
+    margin-left: 10px;
+  }
+  
+  .edu-details,.list-skills{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    
+  }
+  
+  .bachelors,.hsc,.sslc,.skills,.skills2{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid #880303;
+  }
+  
+  .skills,.skills2{
+    color: #a70202;
+  }
+  
+  .skills,.my2,.skills2{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .skill-topic{
+    font-size: 20px;
+    margin-left: 5px;
+    color: whitesmoke;
+    text-decoration:underline;
+    justify-content: center;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #a70202;
+    
+  }
+  
+  .link{
+    text-decoration: none;
+    color: #a70202;
+  }
+  @media screen and (max-width:600px){
+    .edu-details,.list-skills{
+      display: block;
+    }
+    .bachelors,.hsc,.sslc,.skills,.skills2{
+      font-size: 15px;
+      margin-left: 0px;
+      /* border:none; */
+    }
+    .skill-topic{
+      font-size: 18px;
+    }
+    .my,.my2,.journey{
+      font-size: 30px;
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer{
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+  }

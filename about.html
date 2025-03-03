@@ -3,61 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>About me | Ariharan T</title>
     <link rel="stylesheet" href="Styles/aboutstyle.css">
     <link rel="icon" type="image/x-icon" href="icons/favicon.png">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="header">
-        <div class="headname">ARIHARAN T</div>
-        <div class="right">
-  
-          <a class="links" href="index.html">
-            <div class="home">Home</div> 
-          </a>
-          
-          <a class="links" href="education.html">
-            <div class="education">Education</div>
-          </a>
-          
-          <a class="links" href="projects.html">
-            <div class="project">Projects</div>
-          </a>
-          
-          <a class="links" href="contact.html">
-            <div class="contact">Contacts</div>
-          </a>
-          
-        </div>
-      </nav>
-      <div class="body">
-        <div class="detail-container">
-          <div class="name">Hi I'm Ariharan</div>
-          <div class="designation">Software Engineer</div>
-          <p class="about">
-            Hi,I'm Ariharan.I'm a Computer Science Engineer and I Graduated My Bachelors Degree in Mohamed Sathak AJ College of Engineering
-            which is located in Chennai,TamilNadu.
-          </p>
-          <div class="next-page">
-            <a href="education.html">
-              <div>
-                <button class="button1">Next</button>
-              </div>
-            </a>
-            <a href="contact.html">
-              <div>
-                <button class="button2">Lets Speekup</button>
-              </div>
-            </a>
+    <div class="page-loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">ARIHARAN T</div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARIHARAN T</div>
+            <div class="nav-links">
+                <a class="nav-item" href="index.html" data-text="Home">Home</a>
+                <a class="nav-item" href="education.html" data-text="Education">Education</a>
+                <a class="nav-item" href="projects.html" data-text="Projects">Projects</a>
+                <a class="nav-item" href="contact.html" data-text="Contact">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
     
-          </div>
+    <main class="hero-section">
+        <div class="profile-content">
+            <h1 class="greeting animate-text">Hi, I'm <span class="highlight">Ariharan</span></h1>
+            <h2 class="job-title">Software Engineer</h2>
+            <div class="animated-border"></div>
+            <p class="bio">
+                I'm a Computer Science Engineer who graduated with a Bachelor's Degree from Mohamed Sathak AJ College of Engineering
+                in Chennai, Tamil Nadu. Passionate about creating innovative solutions through code.
+            </p>
+            <div class="cta-buttons">
+                <a href="education.html">
+                    <button class="btn btn-outline">
+                        <span>My Education</span>
+                    </button>
+                </a>
+                <a href="contact.html">
+                    <button class="btn btn-solid">
+                        <span>Let's Connect</span>
+                    </button>
+                </a>
+            </div>
         </div>
-        <div class="image-container">
-          <img class="image" src="./Images/Image mine.png">
+        <div class="profile-image">
+            <div class="image-frame">
+                <img src="./Images/Image mine.png" alt="Ariharan T - Software Engineer">
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
         </div>
-      </div>
+    </main>
 
+    <script>
+        // Page load animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.page-loader').classList.add('loaded');
+                document.querySelector('.greeting').classList.add('show');
+                
+                // Animate elements sequentially
+                setTimeout(() => document.querySelector('.job-title').classList.add('show'), 400);
+                setTimeout(() => document.querySelector('.animated-border').classList.add('show'), 600);
+                setTimeout(() => document.querySelector('.bio').classList.add('show'), 800);
+                setTimeout(() => document.querySelector('.cta-buttons').classList.add('show'), 1000);
+                setTimeout(() => document.querySelector('.profile-image').classList.add('show'), 1200);
+            }, 1500);
+        });
 
+        // Custom cursor
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: 'forwards' });
+        });
+
+        // Hover effects for interactive elements
+        const buttons = document.querySelectorAll('.btn, .nav-item');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                cursorOutline.classList.add('grow');
+            });
+            button.addEventListener('mouseleave', () => {
+                cursorOutline.classList.remove('grow');
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Parallax effect on hover for image
+        const profileImage = document.querySelector('.profile-image');
+        const image = profileImage.querySelector('img');
+        
+        profileImage.addEventListener('mousemove', (e) => {
+            const { left, top, width, height } = profileImage.getBoundingClientRect();
+            const x = (e.clientX - left) / width;
+            const y = (e.clientY - top) / height;
+            
+            image.style.transform = `perspective(1000px) rotateY(${(x - 0.5) * 10}deg) rotateX(${(y - 0.5) * -10}deg) scale(1.05)`;
+        });
+        
+        profileImage.addEventListener('mouseleave', () => {
+            image.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) scale(1)';
+        });
+    </script>
 </body>
 </html>

@@ -1,97 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>Education</title>
-  <link rel="stylesheet" href="Styles/educationstyle.css">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Ariharan T</title>
+  <link rel="stylesheet" href="Styles/educationstyle.css">
   <link rel="icon" type="image/x-icon" href="icons/favicon.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    <div class="my"> My<span class="journey"></span>Journey</span></div>
+  <div class="page-loader">
+    <div class="loader-circle"></div>
+    <div class="loader-text">ARIHARAN T</div>
   </div>
-  <div class="edu-details">
-    <div class="skills">
-        <span class="skill-topic">Bachelor of engineering</span> 
-      <ul>Mohamed Sathak AJ College of Engineering</ul>
-      <ul>Computer Science Engineering</ul>
-      <ul>(2019-2023)</ul>
-      <ul>CGPA - 7.92</ul>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">ARIHARAN T</div>
+      <div class="nav-links">
+        <a class="nav-item" href="index.html" data-text="Home">Home</a>
+        <a class="nav-item" href="education.html" data-text="Education">Education</a>
+        <a class="nav-item" href="projects.html" data-text="Projects">Projects</a>
+        <a class="nav-item" href="contact.html" data-text="Contact">Contact</a>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="header">
+      <div class="section-title">
+        My <span class="highlight">Journey</span>
+      </div>
     </div>
-    <div class="skills">
+
+    <div class="edu-details">
+      <div class="edu-card bachelor">
+        <span class="skill-topic">Bachelor of Engineering</span> 
+        <ul>
+          <li>Mohamed Sathak AJ College of Engineering</li>
+          <li>Computer Science Engineering</li>
+          <li>(2019-2023)</li>
+          <li>CGPA - 7.92</li>
+        </ul>
+      </div>
+      <div class="edu-card highschool">
         <span class="skill-topic">Higher Secondary</span>
-      <ul>SRM Muthamizhl Higher Secondary School</ul>
-      <ul>HSC - Computer Science</ul>
-      <ul>(2018-2019)</ul>
-      <ul>Percentage - 60.5%</ul>
-    </div>
-    <div class="skills">
+        <ul>
+          <li>SRM Muthamizhl Higher Secondary School</li>
+          <li>HSC - Computer Science</li>
+          <li>(2018-2019)</li>
+          <li>Percentage - 60.5%</li>
+        </ul>
+      </div>
+      <div class="edu-card secondary">
         <span class="skill-topic">Secondary School Leaving Certification</span>
-      <ul>SRM Muthamizhl Higher Secondary School</ul>
-      <ul>10th Standard</ul>
-      <ul>(2016-2017)</ul>
-      <ul>Percentage - 69.2%</ul>
+        <ul>
+          <li>SRM Muthamizhl Higher Secondary School</li>
+          <li>10th Standard</li>
+          <li>(2016-2017)</li>
+          <li>Percentage - 69.2%</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="skills">
-      <div class="my2"> My <span class="journey"> Skills</span></div>
-      <div class="list-skills">
-        <div class="skills">
-          <!-- <span class="skill-topic">Structured Query Language</span>
-          <ul>Good knowledge on writing SQL Queries</ul>
-          <ul>Practiced Extensively on Oracle 10g Database.</ul>
-          <ul>Good knowledge on DQL</ul> -->
+    <div class="skills-section">
+      <div class="section-title">
+        My <span class="highlight">Skills</span>
+      </div>
+      <div class="skills-container">
+        <div class="skills-column">
+          <div class="skill-card">
+            <span class="skill-topic">Java</span>
+            <ul>
+              <li>Good Knowledge on Datatypes</li>
+              <li>Having Good Knowledge on OOPS Concepts</li>
+              <li>Good Knowledge on Inheritance</li>
+              <li>Having Knowledge on Object Class</li>
+              <li>Good Knowledge on Collection and Generics</li>
+              <li>Good Knowledge on Exception Handling</li>
+            </ul>
+          </div>
 
-          <span class="skill-topic">Java</span>
-          <ul>Good Knowledge on Datatypes</ul>
-          <ul>Having  Good Knowledge on OOPS Concepts</ul>
-          <ul>Good Knowledge on Inheritance</ul>
-          <ul>Having Knowledge on Object Class</ul>
-          <ul>Good Knowledge on Collection and Generics</ul>
-          <ul>Good Knowledge on Exception Handling</ul>
-
-          <span class="skill-topic">HTML & CSS</span>
-          <ul>Created a Dynamic Web-Pages</ul>
-          <ul>Having knowledge front-end</ul>
-          <ul>Good Knowledge on HTML  Tags</ul>
-          <ul>Having Knowledge on  HTML Attributes</ul>
-          <ul>Good Knowledge on CSS Selectors</ul>
-          <ul>Having Knowledge on  Overflow Property</ul>
-          <ul>Having Knowledge on  Object-fit Property</ul>
-         <ul> Having Knowledge on  Box Model</ul>
-         
+          <div class="skill-card">
+            <span class="skill-topic">HTML & CSS</span>
+            <ul>
+              <li>Created Dynamic Web-Pages</li>
+              <li>Having knowledge on front-end</li>
+              <li>Good Knowledge on HTML Tags</li>
+              <li>Having Knowledge on HTML Attributes</li>
+              <li>Good Knowledge on CSS Selectors</li>
+              <li>Having Knowledge on Overflow Property</li>
+              <li>Having Knowledge on Object-fit Property</li>
+              <li>Having Knowledge on Box Model</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="skills2">
-          <span class="skill-topic">JavaScript</span>
-          <ul>Good Knowledge Datatypes</ul>
-          <ul>Having Knowledge on  Functions</ul>
-          <ul>Having Knowledge on  Arrays</ul>
-          <ul>Having Knowledge on  Objects</ul>
-          <ul>Having Knowledge on  DOM</ul>
-          <span class="skill-topic">Strength</span>
-          <ul>Leadership</ul>
-          <ul>Time Management</ul>
-          <ul>TeamWork</ul>
-          <ul>Adaptability</ul>
-        
-          <span class="skill-topic">Expertise In</span>
-          <ul>Driving</ul>
-          <ul>Computer Operating-Systems</ul>
-          <ul>PC Build</ul>
+        <div class="skills-column">
+          <div class="skill-card">
+            <span class="skill-topic">JavaScript</span>
+            <ul>
+              <li>Good Knowledge on Datatypes</li>
+              <li>Having Knowledge on Functions</li>
+              <li>Having Knowledge on Arrays</li>
+              <li>Having Knowledge on Objects</li>
+              <li>Having Knowledge on DOM</li>
+            </ul>
+          </div>
 
-          <span class="skill-topic">Languages Known</span>
-          <ul>English & Tamil</ul>
+          <div class="skill-card">
+            <span class="skill-topic">Strength</span>
+            <ul>
+              <li>Leadership</li>
+              <li>Time Management</li>
+              <li>TeamWork</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-topic">Expertise In</span>
+            <ul>
+              <li>Driving</li>
+              <li>Computer Operating-Systems</li>
+              <li>PC Build</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-topic">Languages Known</span>
+            <ul>
+              <li>English & Tamil</li>
+            </ul>
+          </div>
         </div>
       </div>
-  </div>
+    </div>
 
-  <a class="link" href="index.html">
-    <div class="footer"> Back To Homepage </div>
-  </a>
+    <div class="cta-buttons">
+      <a href="index.html">
+        <button class="btn btn-outline">
+          <span>Back To Homepage</span>
+        </button>
+      </a>
+    </div>
+  </main>
 
+  <script>
+    // Page load animation
+    window.addEventListener('load', function() {
+      setTimeout(() => {
+        document.querySelector('.page-loader').classList.add('loaded');
+        
+        // Animate elements sequentially
+        setTimeout(() => document.querySelector('.section-title').classList.add('show'), 400);
+        setTimeout(() => document.querySelectorAll('.edu-card').forEach((card, index) => {
+          setTimeout(() => card.classList.add('show'), index * 200);
+        }), 600);
+        
+        setTimeout(() => document.querySelectorAll('.skill-card').forEach((card, index) => {
+          setTimeout(() => card.classList.add('show'), index * 150);
+        }), 1200);
+        
+        setTimeout(() => document.querySelector('.cta-buttons').classList.add('show'), 2000);
+      }, 1500);
+    });
+
+    // Custom cursor
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
+
+    window.addEventListener('mousemove', function(e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 500, fill: 'forwards' });
+    });
+
+    // Hover effects for interactive elements
+    const buttons = document.querySelectorAll('.btn, .nav-item, .skill-card, .edu-card');
+    buttons.forEach(button => {
+      button.addEventListener('mouseenter', () => {
+        cursorOutline.classList.add('grow');
+      });
+      button.addEventListener('mouseleave', () => {
+        cursorOutline.classList.remove('grow');
+      });
+    });
+
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

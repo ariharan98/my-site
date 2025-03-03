@@ -1,63 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Projects</title>
-  <link rel="stylesheet" href="Styles/projectstyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="icons/favicon.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ariharan T</title>
+    <link rel="stylesheet" href="Styles/projectstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    PROJECTS
-  </div>
+    <div class="page-loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">ARIHARAN T</div>
+    </div>
 
-  <div class="page-container">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARIHARAN T</div>
+            <div class="nav-links">
+                <a class="nav-item" href="index.html" data-text="Home">Home</a>
+                <a class="nav-item" href="education.html" data-text="Education">Education</a>
+                <a class="nav-item" href="projects.html" data-text="Projects">Projects</a>
+                <a class="nav-item" href="contact.html" data-text="Contact">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
     
-    <div class="project1">
-      <div class="detail">
-        <p class="pname">Agriculture and crop recomendation System</p>
-        <p class="para">&nbsp;
-            Agriculture Crop Recommendation System that combineda user-friendly interface, 
-            data-driven recommendations.</p>
-      </div>
-      <div class="image">
-        <img class="photo" src="Images/crop.png">
-      </div>
-    </div>
-    
-    <div class="project2">
-      <div class="detail">
-        <p class="pname">Customer care registry (IBM)</p>
-        <p class="para">&nbsp; 
-            IBM Cloud Management was delivering comprehensive
-            and user-centric Customer Care Registry. 
-        </p>
-      </div>
-      <div class="image">
-        <img class="photo" src="Images/ibm.png">
-      </div>
-    </div>
+    <main>
+        <div class="page-title">
+            <h1 class="animate-text">My <span class="highlight">Projects</span></h1>
+            <div class="animated-border"></div>
+        </div>
 
-    <div class="project3">
-      <div class="detail">
-        <p class="pname">Online Shopping system (Mini Project)</p>
-        <p class="para">&nbsp; 
-            Delivering an efficient and user-centric Online ShoppingSystem
-        </p>
-      </div>
-      <div class="image">
-        <img class="photo" src="Images/online shop.png">
-      </div>
-    </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-content">
+                    <h2 class="project-title">Agriculture and Crop Recommendation System</h2>
+                    <div class="project-border"></div>
+                    <p class="project-description">
+                        Agriculture Crop Recommendation System that combined a user-friendly interface, 
+                        data-driven recommendations.
+                    </p>
+                    <!-- <button class="btn btn-outline">
+                        <span>View Details</span>
+                    </button> -->
+                </div>
+                <div class="project-image">
+                    <div class="image-frame">
+                        <img src="Images/crop.png" alt="Agriculture Project">
+                    </div>
+                </div>
+            </div>
 
-  </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h2 class="project-title">Customer Care Registry (IBM)</h2>
+                    <div class="project-border"></div>
+                    <p class="project-description">
+                        IBM Cloud Management was delivering comprehensive
+                        and user-centric Customer Care Registry.
+                    </p>
+                    <!-- <button class="btn btn-outline">
+                        <span>View Details</span>
+                    </button> -->
+                </div>
+                <div class="project-image">
+                    <div class="image-frame">
+                        <img src="Images/ibm.png" alt="IBM Project">
+                    </div>
+                </div>
+            </div>
 
-  <div class="footer">
-    <a class="links" href="index.html">
-      <div class="homepage">Back to Homepage</div>
-    </a>
-  </div>
-  
+            <div class="project-card">
+                <div class="project-content">
+                    <h2 class="project-title">Online Shopping System</h2>
+                    <div class="project-border"></div>
+                    <p class="project-description">
+                        Delivering an efficient and user-centric Online Shopping System.
+                    </p>
+                    <!-- <button class="btn btn-outline">
+                        <span>View Details</span>
+                    </button> -->
+                </div>
+                <div class="project-image">
+                    <div class="image-frame">
+                        <img src="Images/online shop.png" alt="Online Shopping Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html">
+                <button class="btn btn-solid">
+                    <span>Back to Homepage</span>
+                </button>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Page load animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.page-loader').classList.add('loaded');
+                document.querySelector('.page-title').classList.add('show');
+                
+                // Animate project cards sequentially
+                const projectCards = document.querySelectorAll('.project-card');
+                projectCards.forEach((card, index) => {
+                    setTimeout(() => card.classList.add('show'), 300 * (index + 1));
+                });
+                
+                // Animate back button
+                setTimeout(() => document.querySelector('.back-to-home').classList.add('show'), 
+                    300 * (projectCards.length + 1));
+            }, 1500);
+        });
+
+        // Custom cursor
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: 'forwards' });
+        });
+
+        // Hover effects for interactive elements
+        const buttons = document.querySelectorAll('.btn, .nav-item');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                cursorOutline.classList.add('grow');
+            });
+            button.addEventListener('mouseleave', () => {
+                cursorOutline.classList.remove('grow');
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Parallax effect on hover for project images
+        const projectImages = document.querySelectorAll('.project-image');
+        
+        projectImages.forEach(projectImage => {
+            const image = projectImage.querySelector('img');
+            
+            projectImage.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = projectImage.getBoundingClientRect();
+                const x = (e.clientX - left) / width;
+                const y = (e.clientY - top) / height;
+                
+                image.style.transform = `perspective(1000px) rotateY(${(x - 0.5) * 10}deg) rotateX(${(y - 0.5) * -10}deg) scale(1.05)`;
+            });
+            
+            projectImage.addEventListener('mouseleave', () => {
+                image.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>

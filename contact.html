@@ -1,85 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact</title>
-  <link rel="stylesheet" href="Styles/contactstyles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ariharan T</title>
+    <link rel="stylesheet" href="Styles/contactstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page-container">
-    <div class="background-container">
-
-      <div  class="header">Choose any of the Following to connect with me</div>
-      <div class="body">
-        <img class="background-image" src="Images/2907044.jpg">
-        <div class="Contacts">
-          <div class="col1">
-  
-            <a class="links" href="https://instagram.com/mr_ariharan_?igshid=MzMyNGUyNmU2YQ==" target="_blank">
-              <div class="contact-instagram">
-                <img class="icons" src="icons/insta-logo.png">
-                Instagram
-              </div>
-            </a>
-            
-            <a class="links" href="https://www.facebook.com/ariharan.ariharan.1840070?mibextid=2JQ9oc" target="_blank">
-              <div class="contact-facebook">
-                <img class="icons" src="icons/facebook-logo.png">
-                Facebook
-              </div>
-            </a>
-            
-            <a class="links" href="https://github.com/ariharan98" target="_blank">
-              <div class="contact-git">
-                <img class="icons" src="icons/git-logo.png">
-                Git
-              </div>
-            </a>
-  
-            <a class="links" href="https://www.linkedin.com/in/ariharan-off" target="_blank">
-              <div class="contact-twitter">
-                <img class="icons" src="icons/twitter-logo.png">
-                Linkedin
-              </div>
-            </a>
-  
-          </div>
-          <div class="col2">
-  
-            <a class="links" href="https://wa.me/9150626092" target="_blank">
-              <div class="contact-whatsapp">
-                <img class="icons" src="icons/whatsapp-icon.png">  
-                Whatsapp
-              </div>
-            </a>
-  
-            <a class="links" href="tel://9150626092" target="_blank">
-              <div class="contact-Phone">
-                <img class="icons" src="icons/contact-icon.png">
-                Phone
-              </div>
-            </a>
-  
-            <a class="links" href="mailto:tariharan6@gmail.com">
-              <div class="contact-Mail">
-                <img class="icons" src="icons/mail-logo.png">
-                Mail
-              </div>
-            </a>
-            
-            <a class="links" href="index.html">
-              <div class="Back-to-home"> 
-                <img class="icons" src="icons/home-icon.png">
-                Back to Home page
-              </div>
-            </a>
-            
-          </div>
-        </div>
-      </div>
-
+    <div class="page-loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">ARIHARAN T</div>
     </div>
-  </div>  
-</body> 
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARIHARAN T</div>
+            <div class="nav-links">
+                <a class="nav-item" href="index.html" data-text="Home">Home</a>
+                <a class="nav-item" href="education.html" data-text="Education">Education</a>
+                <a class="nav-item" href="projects.html" data-text="Projects">Projects</a>
+                <a class="nav-item" href="about.html" data-text="About">About</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="contact-section">
+        <div class="contact-header">
+            <h1 class="title animate-text">Connect <span class="highlight">With Me</span></h1>
+            <div class="animated-border"></div>
+            <p class="subtitle">Choose any of the following platforms to reach out</p>
+        </div>
+        
+        <div class="contact-grid">
+            <a class="contact-card" href="https://instagram.com/mr_ariharan_?igshid=MzMyNGUyNmU2YQ==" target="_blank" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/insta-logo.png" alt="Instagram">
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Follow my creative journey</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="https://www.facebook.com/ariharan.ariharan.1840070?mibextid=2JQ9oc" target="_blank" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/facebook-logo.png" alt="Facebook">
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Connect with me socially</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="https://github.com/ariharan98" target="_blank" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/git-logo.png" alt="GitHub">
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Explore my coding projects</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="https://www.linkedin.com/in/ariharan-off" target="_blank" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/twitter-logo.png" alt="LinkedIn">
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="https://wa.me/9150626092" target="_blank" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/whatsapp-icon.png" alt="WhatsApp">
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with me directly</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="tel://9150626092" target="_blank" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/contact-icon.png" alt="Phone">
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Call me directly</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card" href="mailto:tariharan6@gmail.com" data-aos="fade-up" data-aos-delay="700">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/mail-logo.png" alt="Email">
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send me a message</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+            
+            <a class="contact-card home-card" href="index.html" data-aos="fade-up" data-aos-delay="800">
+                <div class="card-content">
+                    <div class="icon-container">
+                        <img class="icon" src="icons/home-icon.png" alt="Home">
+                    </div>
+                    <h3>Back Home</h3>
+                    <p>Return to homepage</p>
+                </div>
+                <div class="card-hover-effect"></div>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Page load animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.page-loader').classList.add('loaded');
+                
+                // Animate title and elements sequentially
+                document.querySelector('.title').classList.add('show');
+                setTimeout(() => document.querySelector('.animated-border').classList.add('show'), 400);
+                setTimeout(() => document.querySelector('.subtitle').classList.add('show'), 600);
+                
+                // Animate contact cards with stagger
+                const cards = document.querySelectorAll('.contact-card');
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('show');
+                    }, 800 + (index * 100));
+                });
+            }, 1500);
+        });
+
+        // Custom cursor
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: 'forwards' });
+        });
+
+        // Hover effects for interactive elements
+        const interactiveElements = document.querySelectorAll('.contact-card, .nav-item');
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursorOutline.classList.add('grow');
+            });
+            element.addEventListener('mouseleave', () => {
+                cursorOutline.classList.remove('grow');
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // Parallax effect on card hover
+        const cards = document.querySelectorAll('.contact-card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = card.getBoundingClientRect();
+                const x = (e.clientX - left) / width;
+                const y = (e.clientY - top) / height;
+                
+                card.style.transform = `perspective(1000px) rotateY(${(x - 0.5) * 10}deg) rotateX(${(y - 0.5) * -10}deg) scale(1.05)`;
+                card.querySelector('.card-hover-effect').style.opacity = '1';
+                card.querySelector('.card-hover-effect').style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(224, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 60%)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) scale(1)';
+                card.querySelector('.card-hover-effect').style.opacity = '0';
+            });
+        });
+    </script>
+</body>
 </html>
